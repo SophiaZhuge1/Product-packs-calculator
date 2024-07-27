@@ -59,7 +59,7 @@ func orderHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:3000"},
+		AllowedOrigins:   []string{"http://localhost:3000", "https://packs-calculator-frontend.vercel.app"},
 		AllowCredentials: true,
 		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
 		AllowedHeaders:   []string{"Content-Type"},
