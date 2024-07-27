@@ -8,7 +8,7 @@
 - Simply run: ```go run main.go```
 - The backend should be running at https://localhost:8080/order
 
-API deployed to Google App Engine: https://gs-packs-calculator.ew.r.appspot.com 
+API deployed to Google Cloud App Engine: https://gs-packs-calculator.ew.r.appspot.com 
 
 ---
 The app can be visited at: https://packs-calculator-frontend.vercel.app/ 
