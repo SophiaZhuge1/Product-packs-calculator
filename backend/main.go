@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"sort"
+
 	"github.com/rs/cors"
 )
 
@@ -58,11 +59,11 @@ func orderHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	c := cors.New(cors.Options{
-		AllowedOrigins: []string{"http://localhost:3000"}, // Adjust the frontend URL if needed
+		AllowedOrigins:   []string{"http://localhost:3000"},
 		AllowCredentials: true,
-		AllowedMethods: []string{"GET", "POST", "OPTIONS"},
-		AllowedHeaders: []string{"Content-Type"},
-		Debug: true,
+		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
+		AllowedHeaders:   []string{"Content-Type"},
+		Debug:            true,
 	})
 
 	handler := c.Handler(http.DefaultServeMux)
